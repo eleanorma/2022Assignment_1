@@ -1,0 +1,171 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Assignment_1",
+		"_postman_id": "8d555ddb-59c9-2c67-af8d-b79bf4d0ee01",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9041/login",
+			"request": {
+				"url": "http://localhost:9041/login",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic RWxlYW5vcjoxMjM0NQ==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"Zhang\",\n\t\"password\":\"12345\"\n}\n"
+				},
+				"description": "get access token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9041/topic",
+			"request": {
+				"url": "http://localhost:9041/topic",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjQyOTI4MjI5fQ.LhgsZFeMH20JeEA922BzvRqyMd9XHPmqMsPLIzw4t-8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "get all topics"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9041/mytopic",
+			"request": {
+				"url": "http://localhost:9041/mytopic",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjQyOTI4MjI5fQ.LhgsZFeMH20JeEA922BzvRqyMd9XHPmqMsPLIzw4t-8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "get topics of one user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9041/topic/4",
+			"request": {
+				"url": "http://localhost:9041/topic/4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjQyOTI4MjI5fQ.LhgsZFeMH20JeEA922BzvRqyMd9XHPmqMsPLIzw4t-8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "get one topic of a user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9041/topic",
+			"request": {
+				"url": "http://localhost:9041/topic",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjQyOTI4MjI5fQ.LhgsZFeMH20JeEA922BzvRqyMd9XHPmqMsPLIzw4t-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"与Livehouse负责人零距离\",\n    \"subtitle\":\"你理想中的livehouse是怎样的\"\n}"
+				},
+				"description": "create a topic"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9041/topic/8",
+			"request": {
+				"url": "http://localhost:9041/topic/8",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjQyOTI4MjI5fQ.LhgsZFeMH20JeEA922BzvRqyMd9XHPmqMsPLIzw4t-8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "update a topic"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9041/topic/9",
+			"request": {
+				"url": "http://localhost:9041/topic/9",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjQyOTI4MjI5fQ.LhgsZFeMH20JeEA922BzvRqyMd9XHPmqMsPLIzw4t-8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "delete a topic"
+			},
+			"response": []
+		}
+	]
+}
